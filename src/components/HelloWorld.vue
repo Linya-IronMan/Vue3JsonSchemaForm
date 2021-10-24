@@ -20,7 +20,7 @@ const PropTypes = {
   msg: String,
   config: {
     type: Object as PropType<Config>,
-    required: true,
+    required: false,
   },
 } as const
 
