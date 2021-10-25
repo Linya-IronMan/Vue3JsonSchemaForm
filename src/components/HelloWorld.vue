@@ -22,6 +22,10 @@ const PropTypes = {
     type: Object as PropType<Config>,
     required: false,
   },
+  age: {
+    type: Number,
+    required: true,
+  },
 } as const
 
 export default defineComponent({

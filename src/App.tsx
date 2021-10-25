@@ -1,6 +1,11 @@
 import { reactive, ref, defineComponent, h } from "vue"
 import HelloWorld from "./components/HelloWorld.vue"
 const img = require("./assets/logo.png") // eslint-disable-line
+
+const getHelloWorld = (age: number) => {
+  return <HelloWorld age={age} />
+}
+
 export default defineComponent({
   setup() {
     const age = ref(12)
@@ -13,7 +18,7 @@ export default defineComponent({
         <div id="app">
           <img src={img} alt="Vue logo" />
           <p>{age.value}1</p>
-          <HelloWorld />
+          {getHelloWorld(12)}
         </div>
       )
     }
